@@ -1,0 +1,25 @@
+{
+  "name": "motion-canvas-test",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "render": "node scripts/render.mjs",
+    "render:signal": "node scripts/render.mjs --to 12 --fps 60 --mp4",
+    "preview": "node scripts/render.mjs --to 12 --fps 20 --scale 0.5"
+  },
+  "dependencies": {
+    "@motion-canvas/2d": "3.17.2",
+    "@motion-canvas/core": "3.17.2"
+  },
+  "devDependencies": {
+    "@motion-canvas/ffmpeg": "3.17.2",
+    "@motion-canvas/ui": "3.17.2",
+    "@motion-canvas/vite-plugin": "3.17.2",
+    "puppeteer-core": "^24.10.0",
+    "typescript": "^5.7.0",
+    "vite": "^5.4.11"
+  }
+}

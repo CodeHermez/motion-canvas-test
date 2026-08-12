@@ -1,0 +1,14 @@
+/* Space Grotesk, self-hosted.
+ *
+ * Vendored into public/fonts rather than pulled from fonts.gstatic.com so the
+ * render is deterministic and works offline — a webfont that 404s at render
+ * time silently falls back and every frame is wrong.
+ *
+ * Variable file: one woff2 covers 300..700. */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: block;
+  src: url("/fonts/space-grotesk-latin.woff2") format("woff2");
+}
